@@ -1,5 +1,16 @@
 import matplotlib.pyplot as plt
 
+
+def plot_density_matrix(rho, title, ax_mag, ax_phase):
+    abs_rho = np.abs(rho)
+    phase_rho = np.angle(rho)
+
+    im1 = ax_mag.imshow(abs_rho, cmap='viridis')
+
+    ax_mag.set_title(f"{title} | Magnitude")
+
+    return im1
+
 plt.plot(sigma_list, fidelities, marker='o')
 plt.xlabel("Noise level σ")
 plt.ylabel("Fidelity F(ρ, ρ~)")

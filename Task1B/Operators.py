@@ -30,7 +30,7 @@ def parity(N):
     '''
     a = destroy(N)
     i = 1j
-    generator = i * jnp.pi * a @ a.dag()
+    generator = i * jnp.pi * a.dag() @ a
     P = expm(generator)
     return P
 

@@ -1,2 +1,2 @@
-# ABC's Team YQuantum Alice and Bob Challenge
+# ABC's YQuantum Alice and Bob Challenge
 Wigner Functions!!!

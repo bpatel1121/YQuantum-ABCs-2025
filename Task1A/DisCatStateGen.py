@@ -20,7 +20,7 @@ b = dq.tensor(np.eye(n), dq.destroy(n))
 
 
 H = g * a.dag() @ a.dag() @ b + g * a @ a @ b.dag() + epsilon * (b + b.dag())
-jump_ops = [jnp.sqrt(kappa) * a]
+jump_ops = [jnp.sqrt(kappa) * b]
 
 # initial state
 psi0 = dq.tensor(dq.basis(n, 0), (dq.basis(n, 0)))
